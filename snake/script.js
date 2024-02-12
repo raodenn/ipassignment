@@ -8,10 +8,10 @@ canvas.height = 400;
 var snakeSegments = [];
 var snakeLength = 1;
 
-var snakeX = 0;
-var snakeY = 0;
+var snakeX = Math.floor(Math.random() * canvas.width/10)*10;
+var snakeY = Math.floor(Math.random() * canvas.height/10)*10;
 
-var directionX = 10;
+var directionX = 0;
 var directionY = 0;
 
 var dots = [];
@@ -50,25 +50,34 @@ function gameLoop() {
 gameLoop();
 
 document.onkeydown = function(event) {
-switch (event.keyCode) {
-  case 37: // Left arrow
-    directionX = -10;
-    directionY = 0;
-    break;
-  case 38: // Up arrow
-    directionX = 0;
-    directionY = -10;
-    break;
-  case 39: // Right arrow
-    directionX = 10;
-    directionY = 0;
-    break;
-  case 40: // Down arrow
-    directionX = 0;
-    directionY = 10;
-    break;
+  switch (event.keyCode) {
+    case 37: // Left arrow
+      if (directionX !== 10) { 
+        directionX = -10;
+        directionY = 0;
+      }
+      break;
+    case 38: // Up arrow
+      if (directionY !== 10) { 
+        directionX = 0;
+        directionY = -10;
+      }
+      break;
+    case 39: // Right arrow
+      if (directionX !== -10) { 
+        directionX = 10;
+        directionY = 0;
+      }
+      break;
+    case 40: // Down arrow
+      if (directionY !== -10) { 
+        directionX = 0;
+        directionY = 10;
+      }
+      break;
   }
 };
+
 
 function spawnDots() {
   if(dots.length < 1) {
