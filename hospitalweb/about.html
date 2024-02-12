@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AASTU medical</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> <strong>AASTU </strong>medical </a>
+
+    <nav class="navbar" >
+        <a href="index.html">home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="dentist.html">dental care</a>
+            <a href="onc.html">oncology</a>
+            <a href="phys.html">physiotherapy</a>
+          </div>
+        </div> 
+        <a href="appointment.html">appointment</a>
+        <a href="about.html">about</a>
+        <button onclick="document.getElementById('01').style.display='block'" style="width:auto; color:black;margin:0;padding-bottom: 0;padding-top:0;font-size: large;"><i class="fa-solid fa-user"></i> Signup</button>
+
+<div id="01" class="modal">
+  <span onclick="document.getElementById('01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="">
+    <div class="container">
+      <h1>Sign Up</h1>
+      
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-Confirm"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="psw-Confirm" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<section class="about" style="padding-top: 100px;" >
+
+    <h1 class="heading" > <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="css/Doctors.svg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>take the world's best quality treatment</h3>
+            <p>At AASTU med, our commitment to healthcare excellence is the cornerstone of our institution. Founded on a passion for healing and a dedication to patient well-being, we have established ourselves as a trusted healthcare provider in the community..</p>
+            <p>Our mission is to deliver compassionate and comprehensive medical services, utilizing cutting-edge technology and a patient-centered approach. We strive to enhance the quality of life for every individual we serve, promoting health and wellness at every stage of life.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<h1 class="heading" style="background-color: #d3cfcc;" > <span>Contact</span> us </h1>
+
+<div class="container">
+  <form action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="mail">Email</label>
+    <input type="email" id="mail" name="email" placeholder="Enter email" required>
+   
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<section class="footer">
+
+    <div class="box-container">
+  
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"> <i class="fas fa-chevron-right"></i> home </a>
+            <a href="appointment.html"> <i class="fas fa-chevron-right"></i> appointment </a>
+            <a href="about.html"> <i class="fas fa-chevron-right"></i> about </a>
+  
+        </div>
+  
+        <div class="box">
+            <h3>our services</h3>
+            <a href="dentist.html"> <i class="fas fa-chevron-right"></i> dental care </a>
+            <a href="onc.html"> <i class="fas fa-chevron-right"></i> oncology</a>
+            <a href="phys.html"> <i class="fas fa-chevron-right"></i> physiotherapy</a>
+        </div>
+  
+        <div class="box">
+            <h3>appointment info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +251-234-467-8909</a>
+            <a href="#"> <i class="fas fa-phone"></i> +251-458-879-9845 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> aastumed@gmail.com </a>
+          
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> TuluDimtu, Addis Ababa </a>
+        </div>
+  
+      
+    </div>
+  
+    <div class="owner">© AASTU medical. All rights reserved. </div>
+  </section>
+  
+
+    
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

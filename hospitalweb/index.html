@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AASTU medical</title>
+<meta name="author" content="Group 5">
+<meta name="keywords" content="ip assignment">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-heartbeat"></i> <strong>AASTU </strong>medical </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="dentist.html">dental care</a>
+            <a href="onc.html">oncology</a>
+            <a href="phys.html">physiotherapy</a>
+          </div>
+        </div> 
+        <a href="appointment.html">appointment</a>
+        <a href="about.html">about</a>
+        <button onclick="document.getElementById('01').style.display='block'" id="sign" style="width:auto; color:black;margin:0;padding-bottom: 0;padding-top:0;font-size: large;background: transparent;"><i class="fa-solid fa-user"></i> Signup</button>
+
+<div id="01" class="modal">
+  <span onclick="document.getElementById('01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="">
+    <div class="container">
+      <h1>Sign Up</h1>
+      
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-Confirm"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="psw-Confirm" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+<section class="home" id="home">
+  <div class="hero-image">
+    <div class="hero-text">
+      
+      <h3 > students always come first</h3>
+      <a href="appointment.html" class="btn"> make an appointment<span class="fas fa-chevron-right"></span> </a>
+    </div>
+  </div>
+  
+  <section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-user-md"></i>
+        <h3>10</h3>
+        <p>doctors at work</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-users"></i>
+        <h3>8000</h3>
+        <p>satisfied Students</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-procedures"></i>
+        <h3>40</h3>
+        <p>beds</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-hospital"></i>
+        <h3>1</h3>
+        <p>buldings</p>
+    </div>
+
+</section>
+
+<section class="doctors" id="doctors">
+
+  <h1 class="heading"> our <span>doctors</span> </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <img src="css/doc1.jpg" alt="">
+          <h3>john doe</h3>
+          <span>expert heart surgeon</span>
+         
+              
+          
+      </div>
+
+      <div class="box">
+          <img src="css/doc2.jpg" alt="">
+          <h3>jane doe</h3>
+          <span>expert neurosurgeon</span>
+        
+      </div>
+
+      <div class="box">
+          <img src="css/doc3.jpg" alt="">
+          <h3>darryl phillips</h3>
+          <span>chief oncologist</span>
+        
+      </div>
+</section>
+  
+
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"> <i class="fas fa-chevron-right"></i> home </a>
+          <a href="appointment.html"> <i class="fas fa-chevron-right"></i> appointment </a>
+          <a href="about.html"> <i class="fas fa-chevron-right"></i> about </a>
+
+      </div>
+
+      <div class="box">
+          <h3>our services</h3>
+          <a href="dentist.html"> <i class="fas fa-chevron-right"></i> dental care </a>
+          <a href="onc.html"> <i class="fas fa-chevron-right"></i> oncology</a>
+          <a href="phys.html"> <i class="fas fa-chevron-right"></i> physiotherapy</a>
+      </div>
+
+      <div class="box">
+          <h3>appointment info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +251-234-467-8909</a>
+          <a href="#"> <i class="fas fa-phone"></i> +251-458-879-9845 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> aastumed@gmail.com </a>
+        
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> TuluDimtu, Addis Ababa </a>
+      </div>
+
+    
+  </div>
+
+  <div class="owner">© AASTU medical. All rights reserved. </div>
+</section>
+
+    
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
